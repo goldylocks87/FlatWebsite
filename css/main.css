@@ -16,6 +16,7 @@
 
 nav {
 	overflow: auto;
+	font-size: 16px;
 }
 
 nav .topLogo {
@@ -28,6 +29,8 @@ nav ul {
 	display: inline-block;
 	position: absolute;
 	float: right;
+	margin: 0;
+	padding-left: 10px;
 }
 
 nav li {
@@ -50,19 +53,20 @@ nav a:hover {
 	transition: background-color 0.5s ease;
 }
 
-nav .search {
-	padding-top: 10px; 
+nav li.search {
+	margin-left: 12px;
+/*	padding-top: 10px; 
 	display: inline-block;
 	margin-right: 15%; 
 	float: right;
-	position: relative;
+	position: relative;*/
 }
 
 .top {
-	background-color: #4D4D4D;
+	background-color: #EEEEEE;
 	background-image: url('../img/bg-3.jpg');
 	background-position: center;
-	background-size: 900px;
+	background-size: 80%;
 	background-repeat: no-repeat;
 	overflow: auto;
 }
@@ -127,7 +131,7 @@ nav .search {
 .mainDivs {
 	margin: 0 10px;
 	display: inline-block;
-	width: 13%;
+	width: 140px;
 }
 
 .mainDivs img {
@@ -237,12 +241,136 @@ footer i {
 }
 
 
+@media (max-width: 1080px){
+	nav {
+		font-size: 14px;
+	}
+}
 
+@media (max-width: 990px){
+	nav li:nth-child(5) {
+		display: none;
+	}
+}
 
+@media (max-width: 990px){
+	.top {
+		background-size: 800px;
+	}
+}
 
+@media (max-width: 890px){
+	nav .topLogo {
+		margin-left: 10%;
+	}
 
+	footer ul {
+		margin: 0;
+	}
+}
 
+@media (max-width: 800px){
+	nav li:nth-child(4) {
+		display: none;
+	}
 
+	.top h1 {
+		width: 85%;
+		font-size: 60px;
+	}
+
+	.top p {
+		width: 70%;
+	}
+
+	.top {
+		background-size: 100%;
+	}
+
+	.main h2 {
+		display: none;
+	}
+
+	.mainDivs {
+		margin-top: 4%;
+	}
+
+	.pts {
+		display: none;
+	}
+}
+
+@media (max-width: 760px){
+	nav .topLogo {
+		margin-left: 12%;
+	}
+
+	nav .middleLinks {
+		margin-right: 12%;
+		position: relative;
+		float: right;
+	}
+	nav li:nth-child(1), nav li:nth-child(2), nav li:nth-child(3) {
+		display: none;
+	}
+}
+
+@media (max-width: 710px){
+
+	.top h1 {
+		font-size: 42px;
+	}
+
+	.top p {
+		display: none;
+	}
+
+	.button-yellow {
+		padding: 1% 2%;
+		font-size: 14px;
+	}
+
+	.mainDivs {
+		width: 40%;
+	}
+}
+
+@media (max-width: 525px){
+	.top {
+		background-size: 100%;
+	}
+
+	.top h1 {
+		font-size: 36px;
+	}
+
+	.top button {
+		margin: 5% auto 8% auto;
+	}
+
+	.mainDivs {
+		width: 65%;
+	}
+}
+
+@media (max-width: 435px){
+	.top h1 {
+		font-size: 28px;
+	}
+
+	.mainDivs {
+		width: 35%;
+	}
+
+	.circlify {
+		width: 75px;
+		height: 75px;
+	}
+
+	.mainDivs p {
+		display: none;
+	}
+}
 
 
 
