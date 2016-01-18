@@ -370,10 +370,20 @@ footer i {
 	.mainDivs p {
 		display: none;
 	}
+
+	footer .trademarking {
+	}
+
+	footer .social {
+		display: none;
+	}
 }
 
 
-
+/*
+position absolute
+and 0 margin
+*/
 
 
 
